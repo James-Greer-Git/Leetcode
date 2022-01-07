@@ -6,9 +6,9 @@ public class Solution{
         System.out.print(sol.generate(5));
     }
     public List<List<Integer>> generate(int numRows){
-        List<List<Integer>> pascal = new ArrayList<List<Integer>>();
+        List<List<Integer>> pascal = new ArrayList<>();
         for(int i = 0; i < numRows; i++){
-            List<Integer> currentRow = new ArrayList<Integer>();
+            List<Integer> currentRow = new ArrayList<>();
             for(int j = 0; j < i + 1; j++){
                 if(j == 0 || j == i){
                     currentRow.add(j, 1);
